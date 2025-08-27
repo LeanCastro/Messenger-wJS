@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Front Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center">
+    <h1>Hi, this website is perfectly for you</h1>
+    <p>Type your name inside the box below, please!</p>
+    <input type="text" id="name" class="inputName" autocomplete="off">
+    <button class="btn" id="btnName" onclick="displayBox()">Submit</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <h1>Great!</h1>
+      <p class="p-modal">Thank you for your cooperation, 
+        <span id="displayName"></span>
+        <i class="fa-solid fa-face-smile"></i><br><br> You can now...
+      </p>
+      <button class="btn"><a href="today.html">Proceed</a></button>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
